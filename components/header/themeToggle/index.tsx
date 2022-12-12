@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
-  const [isDark, setIsDark] = useState(theme);
+  const [isDark, setIsDark] = useState(theme || "dark");
 
   const toggleTheme = () => {
     switch (isDark) {
@@ -18,17 +18,6 @@ export const ThemeToggle = () => {
         break;
     }
   };
-
-  useEffect(() => {
-    switch (isDark) {
-      case "dark":
-        break;
-      case "light":
-        break;
-      case "question":
-        break;
-    }
-  }, [isDark]);
 
   return (
     <div className={styles.toggleContainer}>
