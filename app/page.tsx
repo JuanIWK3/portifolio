@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Hi, I'm Juan!</h1>
+        <h1 className={styles.title}>
+          Hi, I'm <span className={styles.name}>Juan</span>!
+        </h1>
 
         <p className={styles.description}>
           <code className={styles.code}>Do you have BRIO?</code>
@@ -29,19 +31,6 @@ export default function Home() {
           </Link>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 }
