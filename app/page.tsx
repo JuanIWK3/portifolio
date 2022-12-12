@@ -1,3 +1,4 @@
+"use client";
 import { Nav10k } from "components/header";
 import Image from "next/image";
 import Link from "next/link";
