@@ -1,0 +1,27 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: bold;
+
+  .p10k {
+    display: flex;
+    gap: 0.5rem;
+
+    .path {
+      color: #bd93f9;
+
+      .home {
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: #6272a4;
+        }
+      }
+    }
+
+    .branch {
+      color: rgb(0, 182, 0);
+    }
+  }
+}

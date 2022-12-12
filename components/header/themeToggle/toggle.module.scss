@@ -1,0 +1,78 @@
+$radius: 30px;
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .yes,
+  .no {
+    transition: all 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: #bd93f9;
+    }
+  }
+
+  .toggle {
+    width: $radius * 2;
+    height: $radius;
+    .background {
+      position: relative;
+      background: #6272a4;
+      height: 100%;
+      width: 100%;
+      border-radius: $radius;
+      cursor: pointer;
+
+      .handle {
+        position: absolute;
+        height: $radius;
+        width: $radius;
+        background: #bd93f9;
+        border-radius: 50%;
+        animation: slide-half-left 0.5s forwards;
+
+        &.question {
+          animation: slide-half-right 0.5s forwards;
+        }
+
+        &.active {
+          //   right: 0;
+          animation: slide-right 0.5s forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-half-left {
+  0% {
+    transform: translateX($radius/2);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX($radius/2);
+  }
+
+  100% {
+    transform: translateX($radius);
+  }
+}
+
+@keyframes slide-half-right {
+  0% {
+    transform: translateX($radius);
+  }
+
+  100% {
+    transform: translateX($radius/2);
+  }
+}
