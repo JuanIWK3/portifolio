@@ -12,9 +12,7 @@ export default function Home() {
           Hi, I'm <span className={styles.name}>Juan</span>!
         </h1>
 
-        <p className={styles.description}>
-          <code className={styles.code}>Do you have BRIO?</code>
-        </p>
+        <p className={styles.description}>Do you have BRIO?</p>
 
         <div className={styles.grid}>
           <Link className={styles.card} href={"/projects"}>
@@ -28,7 +26,7 @@ export default function Home() {
             <h2>
               <code>$ cd about</code> &rarr;
             </h2>
-            <p>Who am I.</p>
+            <p>Who am I</p>
           </Link>
         </div>
       </main>

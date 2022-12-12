@@ -1,4 +1,5 @@
 $radius: 30px;
+$spacing: 4px;
 
 .toggleContainer {
   display: flex;
@@ -30,12 +31,12 @@ $radius: 30px;
       width: 100%;
       border-radius: $radius;
       cursor: pointer;
-      padding: 2px;
+      padding: $spacing;
 
       .handle {
         position: absolute;
-        height: $radius - 4;
-        width: $radius - 4;
+        height: $radius - $spacing * 2;
+        width: $radius - $spacing * 2;
         background: #bd93f9;
         border-radius: 50%;
         animation: slide-half-left 0.5s forwards;

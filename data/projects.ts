@@ -13,8 +13,8 @@ export const projects: Project[] = [
   {
     name: "Web Chat",
     description: "2 player blackjack",
-    techs: ["typescript", "scss"],
-    link: "https://github.com/JuanIWK3/BlackJack",
+    techs: ["react", "scss", "typescript"],
+    link: "https://github.com/JuanIWK3/webchat",
     image: Images.webchatImg,
   },
   {
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     name: "ToDo",
     description: "2 player blackjack",
-    techs: ["typescript", "scss"],
+    techs: ["typescript", "scss", "angular"],
     link: "https://github.com/JuanIWK3/angular-todo",
     image: Images.todoImg,
   },
