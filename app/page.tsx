@@ -7,9 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hi, I'm <a href="">Juan!</a>
-        </h1>
+        <h1 className={styles.title}>Hi, I'm Juan!</h1>
 
         <p className={styles.description}>
           <code className={styles.code}>Do you have BRIO?</code>
