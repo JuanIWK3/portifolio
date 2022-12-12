@@ -1,3 +1,4 @@
+"use client";
 import styles from "./about.module.scss";
 
 export default function Home() {
