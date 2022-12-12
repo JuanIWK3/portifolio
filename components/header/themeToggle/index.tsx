@@ -5,19 +5,19 @@ import { useTheme } from "next-themes";
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
-  const [isDark, setIsDark] = useState("dark");
+  const [toggle, setToggle] = useState("dark");
 
   const toggleTheme = () => {
     console.log("toggle");
     console.log({ theme });
-    console.log({ isDark });
+    console.log({ isDark: toggle });
 
-    switch (isDark) {
+    switch (toggle) {
       case "dark":
-        setIsDark("question");
+        setToggle("question");
         break;
       case "light":
-        setIsDark("dark");
+        setToggle("dark");
         setTheme("dark");
         break;
     }
@@ -27,21 +27,29 @@ export const ThemeToggle = () => {
     if (!theme) {
       console.log("df");
     }
+
+    if (toggle === "question") return;
+
+    if (theme === "dark") {
+      setToggle("dark");
+    } else if (theme === "light") {
+      setToggle("light");
+    }
   });
 
   return (
     <div className={styles.toggleContainer}>
-      {isDark == "question" && (
+      {toggle == "question" && (
         <div>
           <span>Do you love your eyes? </span>
-          <span className={styles.yes} onClick={() => setIsDark("dark")}>
+          <span className={styles.yes} onClick={() => setToggle("dark")}>
             yes
           </span>
           <span> {" / "}</span>
           <span
             className={styles.no}
             onClick={() => {
-              setIsDark("light");
+              setToggle("light");
               setTheme("light");
             }}
           >
@@ -53,9 +61,9 @@ export const ThemeToggle = () => {
         <div className={styles.background}>
           <div
             className={`${styles.handle} ${
-              isDark == "dark"
+              toggle == "dark"
                 ? styles.active
-                : isDark == "question" && styles.question
+                : toggle == "question" && styles.question
             }`}
           ></div>
         </div>
