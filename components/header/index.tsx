@@ -17,7 +17,7 @@ export const Nav10k = () => {
           {path}
         </span>
         <span>on</span>
-        <span className={styles.branch}>master</span>
+        <span className={styles.branch}>main</span>
       </div>
       <ThemeToggle />
     </div>

@@ -14,14 +14,16 @@ import todoImg from "./images/todo.jpg";
 import webchatImg from "./images/webchat.jpg";
 import blackJackImg from "./images/blackjack.png";
 import mazeImg from "./images/maze.png";
+import neofetchImg from "./images/neofetch.png";
 
-export const Images = {
+export const images = {
   calculatorImg,
   csgoImg,
   todoImg,
   webchatImg,
   blackJackImg,
   mazeImg,
+  neofetchImg,
 };
 
 export const logos = {

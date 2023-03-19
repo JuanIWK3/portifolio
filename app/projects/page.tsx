@@ -16,7 +16,7 @@ export default function Home() {
                   className={styles.image}
                   src={project.image}
                   alt="project"
-                ></Image>
+                />
               </div>
               <div className={styles.description}>
                 <div className={styles.name}>{project.name}</div>

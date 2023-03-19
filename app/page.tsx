@@ -12,8 +12,6 @@ export default function Home() {
           Hi, I'm <span className={styles.name}>Juan</span>!
         </h1>
 
-        <p className={styles.description}>Do you have BRIO?</p>
-
         <div className={styles.grid}>
           <Link className={styles.card} href={"/projects"}>
             <h2>
