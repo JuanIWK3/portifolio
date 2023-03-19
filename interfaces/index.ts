@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export type Project = {
   name: string;
@@ -8,19 +9,7 @@ export type Project = {
   techs: Tech[];
 };
 
-export type Tech =
-  | "typescript"
-  | "javascript"
-  | "react"
-  | "angular"
-  | "vue"
-  | "scss"
-  | "css"
-  | "bootstrap"
-  | "vuex"
-  | "redux"
-  | "astro"
-  | "preact"
-  | "next"
-  | "nest"
-  | "pinia";
+export type Tech = {
+  name: string;
+  image: IconType;
+};

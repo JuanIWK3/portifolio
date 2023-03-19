@@ -1,4 +1,5 @@
 "use client";
+import { Footer } from "components/footer";
 import { Nav10k } from "components/header";
 import { ThemeProvider } from "next-themes";
 import "./globals.scss";
@@ -20,6 +21,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Nav10k />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

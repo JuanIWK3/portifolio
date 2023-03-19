@@ -1,6 +1,3 @@
-"use client";
-import { Nav10k } from "components/header";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.scss";
 
@@ -26,6 +23,13 @@ export default function Home() {
             </h2>
             <p>Who am I</p>
           </Link>
+
+          {/* <Link className={styles.card} href={"/about"}>
+            <h2>
+              <code>$ cd dotfiles</code> &rarr;
+            </h2>
+            <p>Linux configs</p>
+          </Link> */}
         </div>
       </main>
     </div>

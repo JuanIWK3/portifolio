@@ -1,4 +1,3 @@
-"use client";
 import { images } from "assets";
 import Image from "next/image";
 import styles from "./about.module.scss";
@@ -10,7 +9,7 @@ export default function Home() {
         <ul>
           <li>Me</li>
           <ul>
-            <li>A 21 old from Brazil</li>
+            <li>A 21 years old from Brazil</li>
             <li>Currently learning Rust and Next</li>
           </ul>
           <li>

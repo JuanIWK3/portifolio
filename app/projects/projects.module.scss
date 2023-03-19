@@ -51,17 +51,32 @@
 
   .description {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
     gap: 2rem;
+    z-index: -1;
+    border-radius: 0.5rem;
+    background: #00000015;
 
-    .name {
-      font-weight: bold;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      .name {
+        font-weight: bold;
+      }
+
+      .link {
+        color: #bd93f9;
+        font-family: "JetBrains Mono", monospace;
+      }
     }
 
-    .link {
-      color: #bd93f9;
-      font-family: "JetBrains Mono", monospace;
+    .footer {
+      .techs {
+        display: flex;
+        gap: 1rem;
+      }
     }
   }
 }
