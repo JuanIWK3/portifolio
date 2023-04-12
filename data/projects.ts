@@ -22,6 +22,10 @@ export const techs: Record<string, Tech> = {
     name: "angular",
     image: DiAngularSimple,
   },
+  rust: {
+    name: "rust",
+    image: SiTypescript,
+  },
 };
 
 export const projects: Project[] = [
