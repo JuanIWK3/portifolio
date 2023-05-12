@@ -1,6 +1,6 @@
 import { Project, Tech } from "../interfaces";
 
-import { images } from "assets/index";
+import { images } from "@/assets/index";
 import { SiTypescript } from "react-icons/si";
 import { DiAngularSimple, DiReact } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -30,6 +30,20 @@ export const techs: Record<string, Tech> = {
 
 export const projects: Project[] = [
   {
+    name: "Maze Generator",
+    description: "A maze using depth-first-search",
+    techs: [techs.react, techs.typescript],
+    link: "https://github.com/JuanIWK3/Maze-DFS",
+    image: images.mazeImg,
+  },
+  {
+    name: "Kanban",
+    description: "A kanban board",
+    techs: [techs.next, techs.typescript],
+    link: "https://github.com/JuanIWK3/kanban",
+    image: images.kanbanImg,
+  },
+  {
     name: "Blackjack Game",
     description: "A 2 player blackjack game",
     techs: [techs.typescript],
@@ -41,20 +55,13 @@ export const projects: Project[] = [
     description: "Show weapons from csgo",
     techs: [techs.next, techs.typescript],
     link: "https://github.com/JuanIWK3/csgo-guns-next",
-    image: images.csgoImg,
+    image: images.weaponsImg,
   },
   {
     name: "ToDo",
-    description: "A todo with drag and drop",
+    description: "A to-do with drag and drop",
     techs: [techs.angular, techs.typescript],
     link: "https://github.com/JuanIWK3/angular-todo",
     image: images.todoImg,
-  },
-  {
-    name: "Maze Generator",
-    description: "A maze using depth-first-search",
-    techs: [techs.react, techs.typescript],
-    link: "https://github.com/JuanIWK3/Maze-DFS",
-    image: images.mazeImg,
   },
 ];

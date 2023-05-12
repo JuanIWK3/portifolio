@@ -15,6 +15,8 @@ import webchatImg from "./images/webchat.jpg";
 import blackJackImg from "./images/blackjack.png";
 import mazeImg from "./images/maze.png";
 import neofetchImg from "./images/neofetch.png";
+import kanbanImg from "./images/kanban.png";
+import weaponsImg from "./images/weapons.png";
 
 export const images = {
   calculatorImg,
@@ -24,6 +26,8 @@ export const images = {
   blackJackImg,
   mazeImg,
   neofetchImg,
+  kanbanImg,
+  weaponsImg,
 };
 
 export const logos = {
