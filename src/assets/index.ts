@@ -7,6 +7,7 @@ import reactImg from "./logos/react.png";
 import nextImg from "./logos/nextjs.png";
 import styleImg from "./logos/styled-components.png";
 import nodeImg from "./logos/nodejs.png";
+import framerMotionImg from "./logos/framer-motion.png";
 
 import calculatorImg from "./images/calculator.jpg";
 import csgoImg from "./images/csgo.jpg";
@@ -17,6 +18,8 @@ import mazeImg from "./images/maze.png";
 import neofetchImg from "./images/neofetch.png";
 import kanbanImg from "./images/kanban.png";
 import weaponsImg from "./images/weapons.png";
+import schedulerImg from "./images/scheduler.png";
+import paaImg from "./images/paa-flow.png";
 
 export const images = {
   calculatorImg,
@@ -28,6 +31,8 @@ export const images = {
   neofetchImg,
   kanbanImg,
   weaponsImg,
+  schedulerImg,
+  paaImg,
 };
 
 export const logos = {
@@ -40,4 +45,5 @@ export const logos = {
   reactImg,
   nextImg,
   styleImg,
+  framerMotionImg,
 };

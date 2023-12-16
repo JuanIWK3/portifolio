@@ -37,13 +37,6 @@ export const projects: Project[] = [
     image: images.mazeImg,
   },
   {
-    name: "Kanban",
-    description: "A kanban board",
-    techs: [techs.next, techs.typescript],
-    link: "https://github.com/JuanIWK3/kanban",
-    image: images.kanbanImg,
-  },
-  {
     name: "Blackjack Game",
     description: "A 2 player blackjack game",
     techs: [techs.typescript],
@@ -64,4 +57,18 @@ export const projects: Project[] = [
     link: "https://github.com/JuanIWK3/angular-todo",
     image: images.todoImg,
   },
+  {
+    name: "Scheduler",
+    description: "A animated process scheduler",
+    techs: [techs.next, techs.typescript],
+    link: "https://github.com/JuanIWK3/scheduler",
+    image: images.schedulerImg,
+  },
+  {
+    name: "PAA Flow",
+    description: "A graph visualizer using React Flow",
+    techs: [techs.react, techs.typescript],
+    link: "https://github.com/JuanIWK3/paa-flow",
+    image: images.paaImg,
+  }
 ];
