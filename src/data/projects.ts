@@ -1,30 +1,33 @@
-import { Project, Tech } from "../interfaces";
+import { images } from "@/assets/images";
+import { StaticImageData } from "next/image";
 
-import { images } from "@/assets/index";
-import { SiTypescript } from "react-icons/si";
-import { DiAngularSimple, DiReact } from "react-icons/di";
-import { TbBrandNextjs } from "react-icons/tb";
+export type Project = {
+  name: string;
+  description: string;
+  link: string;
+  image: StaticImageData;
+  techs: Tech[];
+};
+
+export type Tech = {
+  name: string;
+};
 
 export const techs: Record<string, Tech> = {
   typescript: {
     name: "typescript",
-    image: SiTypescript,
   },
   react: {
     name: "react",
-    image: DiReact,
   },
   next: {
     name: "next",
-    image: TbBrandNextjs,
   },
   angular: {
     name: "angular",
-    image: DiAngularSimple,
   },
   rust: {
     name: "rust",
-    image: SiTypescript,
   },
 };
 
@@ -70,5 +73,5 @@ export const projects: Project[] = [
     techs: [techs.react, techs.typescript],
     link: "https://github.com/JuanIWK3/paa-flow",
     image: images.paaImg,
-  }
+  },
 ];
