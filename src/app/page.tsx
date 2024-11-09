@@ -17,7 +17,7 @@ export default function Home() {
       >
         <h1 className="text-xl">Olá,</h1>
         <h1 className="text-5xl font-bold">Eu sou Juan Israel</h1>
-        <h1 className="text-3xl font-bold">Desevolvo coisas pela web</h1>
+        <h1 className="text-3xl font-bold">Desenvolvo coisas pela web</h1>
         <br />
         <h2>
           Desenvolvedor Full Stack sempre em busca de resolver novos problemas.
